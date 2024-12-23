@@ -1,4 +1,4 @@
-# 📸 InstaCapture: Anonymously View and Download Instagram Stories 🕵️‍♂️📥
+# 📸 InstaCapture Anonymously Download Instagram Stories, posts, reels, IGTV videos, and profile pictures 🕵️‍♂️📥
 
 <p id="top" align="right">
   <a href="https://github.com/PrathmeshSoni">
@@ -7,40 +7,92 @@
 </p>
 
 ## Overview
-InstaCapture is a web application that allows you to view and download Instagram stories anonymously. Simply enter the username of the person whose story you want to view and download, and access all their stories effortlessly.
+**InstaCapture** is a Python package for downloading Instagram stories, posts, reels, IGTV videos, and profile pictures. It provides two main modules: `InstaStory` for handling stories using user cookies and `InstaPost` for downloading reels, posts, IGTV videos, and profile pictures without requiring cookies.
 
-## Key Features
-- **🔍 Anonymous Viewing**: View Instagram stories without revealing your identity.
-- **📥 Download Stories**: Easily download stories to your device for offline access.
-- **🔄 User-Friendly Interface**: Navigate and interact with the application seamlessly.
-
-## Tech Stack
-- **🐍 Python & Django**: Powering the backend for robust functionality and data handling.
-- **🔗 Requests & Pandas**: Facilitating API integration and data management.
-- **💾 MySQL**: Ensuring efficient and secure data storage.
-
-## Setup
-1. Clone the repository: `git clone https://github.com/prathmeshsoni/InstaCapture.git && cd InstaCapture`
-2. Create & Activate virtual environment: `python -m venv .venv && .venv\Scripts\activate.bat`
-3. Install dependencies: `pip install -r requirements.txt`
-4. Launch the Django development server: `python manage.py runserver`
-
-## Anonymously Explore Instagram Stories
-Instagram Story Viewer simplifies the process of viewing and downloading Instagram stories while maintaining your anonymity. With a straightforward interface and powerful backend, accessing and saving stories has never been easier.
-
-Explore Instagram Story Viewer now at <a href="https://instagram.prathmeshsoni.works?ref=here-button" target="_blank">here</a> 🌐📸🕵️‍♂️
-
-
-## All Set :)
-
-<p style="float:left;" align="left">
-  <a href="#top">Back To Top</a>
-</p>
-
-<p style="text-align:right;" align="right">
-  <a href="https://github.com/PrathmeshSoni/InstaCapture" target="_blank">Back To Repository</a>
-</p>
-
+## Features
+- Download Instagram stories using user cookies.
+- Download reels, posts, IGTV videos, and profile pictures without cookies.
 
 ---
-**<a href="https://instagram.prathmeshsoni.works?ref=footer-github" target="_blank">InstaCapture</a>** - Provided by **<a href="https://prathmeshsoni.works?ref=footer-github" target="_blank">Prathmesh Soni</a>**
+
+## Installation
+Install the package using pip:
+
+```bash
+pip install InstaCapture
+```
+
+---
+
+## Usage
+
+### Import the Modules
+```python
+from InstaCapture import InstaStory, InstaPost
+```
+
+---
+
+### **Story Download (Requires Cookies)**
+
+#### Example Usage:
+```python
+cookies = {}
+
+story_obj = InstaStory()
+story_obj.cookies = cookies
+
+story_obj.username = 'Enter username or profile link'
+story_obj.get_story()
+
+story_obj.username = 'Enter username or profile link'
+story_obj.get_story()
+```
+
+#### **How to Get Cookies**
+1. Open Chrome and go to Instagram.
+2. Log in to your account.
+3. Right-click anywhere and select **Inspect**.
+4. Go to the **Network** tab.
+5. Refresh the page.
+6. Find a request to `instagram.com`.
+7. Click on the request.
+8. Right-click on the request and select **Copy as cURL**.
+9. Paste the copied cURL command into a tool like [cURL to Python Converter](https://curlconvert.vercel.app/).
+10. Copy the cookies from the converted Python code.
+11. Assign these cookies to the `cookies` variable in your script.
+
+---
+
+### **Reels, Posts, IGTV, and Profile Pictures**
+
+#### Example Usage:
+```python
+post_obj = InstaPost()
+
+post_obj.reel_id = "Enter Post/Reel URL or code"
+post_obj.media_download()
+
+post_obj.reel_id = "Enter another Post/Reel URL or code"
+post_obj.media_download()
+```
+
+---
+
+## Notes
+- Ensure your cookies are up to date for downloading stories.
+- For post, reel, IGTV, and profile picture downloads, cookies are not required.
+
+---
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## Author
+Created by **Prathmesh Soni**  
+For more details, visit [GitHub Repo](https://github.com/prathmeshsoni/InstaCapture).
+```
+
+Let me know if you'd like any modifications!

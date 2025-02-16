@@ -141,6 +141,9 @@ class InstaStory:
         with open(f'{self.folder_path}/story/{self.username}/story.json', 'w') as f:
             json.dump({self.username: story_data}, f)
         
+        with open(f'{self.folder_path}/story/{self.username}/story-main.json', 'w') as f:
+            json.dump(json_data, f)
+        
         self.print(True)
         return {self.username: story_data}
     

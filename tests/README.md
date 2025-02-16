@@ -15,7 +15,7 @@ This script demonstrates an interactive way to use the **InstaCapture** package 
 
 Install the InstaCapture package using:
 ```bash
-pip install InstaCapture
+pip install instacapture
 ```
 
 ---
@@ -25,7 +25,7 @@ pip install InstaCapture
 ### 1. Run the Script
 Run the script using:
 ```bash
-python path/to/script.py
+python test_simple.py
 ```
 
 ### 2. Main Menu
@@ -93,7 +93,7 @@ Thank you for using InstaCapture. Goodbye!
 ---
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/prathmeshsoni/InstaCapture?tab=MIT-1-ov-file).
 
 ---
 

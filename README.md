@@ -1,4 +1,4 @@
-# 📸 InstaCapture Anonymously Download Instagram Stories, posts, reels, IGTV videos, and profile pictures 🕵️‍♂️📥
+# 📸 InstaCapture: Anonymously Download Instagram Stories, Posts, Reels, IGTV Videos, and Profile Pictures 🕵️‍♂️📥
 
 <p id="top" align="right">
   <a href="https://github.com/PrathmeshSoni">
@@ -7,11 +7,17 @@
 </p>
 
 ## Overview
-**InstaCapture** is a Python package for downloading Instagram stories, posts, reels, IGTV videos, and profile pictures. It provides two main modules: `InstaStory` for handling stories using user cookies and `InstaPost` for downloading reels, posts, IGTV videos, and profile pictures without requiring cookies.
+**InstaCapture** is a Python package that allows you to anonymously download Instagram stories, posts, reels, IGTV videos, and profile pictures. It provides two main modules:
+
+- `InstaStory` for downloading stories (requires user cookies)
+- `InstaPost` for downloading reels, posts, IGTV videos, and profile pictures (no cookies required)
+
+📌 **Project Page**: [InstaCapture on PyPI](https://pypi.org/project/instacapture/)
 
 ## Features
-- Download Instagram stories using user cookies.
-- Download reels, posts, IGTV videos, and profile pictures without cookies.
+✅ Download Instagram stories using user cookies.  
+✅ Download reels, posts, IGTV videos, and profile pictures **without cookies**.  
+✅ Simple and easy-to-use Python API.
 
 ---
 
@@ -19,23 +25,23 @@
 Install the package using pip:
 
 ```bash
-pip install InstaCapture
+pip install instacapture
 ```
 
 ---
 
 ## Usage
 
-### Import the Modules
+### **Import the Modules**
 ```python
-from InstaCapture import InstaStory, InstaPost
+from instacapture import InstaStory, InstaPost
 ```
 
 ---
 
-### **Story Download (Requires Cookies)**
+### **Download Instagram Stories (Requires Cookies)**
 
-#### Example Usage:
+#### **Example Usage:**
 ```python
 cookies = {}
 
@@ -43,10 +49,10 @@ story_obj = InstaStory()
 story_obj.cookies = cookies
 
 story_obj.username = 'Enter username or profile link'
-story_obj.get_story()
+story_obj.story_download()
 
 story_obj.username = 'Enter username or profile link'
-story_obj.get_story()
+story_obj.story_download()
 ```
 
 #### **How to Get Cookies**
@@ -60,13 +66,13 @@ story_obj.get_story()
 8. Right-click on the request and select **Copy as cURL**.
 9. Paste the copied cURL command into a tool like [cURL to Python Converter](https://curlconvert.vercel.app/).
 10. Copy the cookies from the converted Python code.
-11. Assign these cookies to the `cookies` variable in your script.
+11. Assign the cookies to the `cookies` variable in your script.
 
 ---
 
-### **Reels, Posts, IGTV, and Profile Pictures**
+### **Download Reels, Posts, IGTV, and Profile Pictures (No Cookies Required)**
 
-#### Example Usage:
+#### **Example Usage:**
 ```python
 post_obj = InstaPost()
 
@@ -80,19 +86,26 @@ post_obj.media_download()
 ---
 
 ## Notes
-- Ensure your cookies are up to date for downloading stories.
-- For post, reel, IGTV, and profile picture downloads, cookies are not required.
+⚠️ **Ensure your cookies are up to date** when downloading stories.
+📌 **For reels, posts, IGTV, and profile pictures, cookies are not required.**
 
 ---
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/prathmeshsoni/InstaCapture?tab=MIT-1-ov-file).
 
 ---
 
-## Author
-Created by **Prathmesh Soni**  
-For more details, visit [GitHub Repo](https://github.com/prathmeshsoni/InstaCapture).
-```
+## All Set :)
 
-Let me know if you'd like any modifications!
+<p style="float:left;" align="left">
+  <a href="#top">Back To Top</a>
+</p>
+
+<p style="text-align:right;" align="right">
+  <a href="https://github.com/PrathmeshSoni/InstaCapture" target="_blank">Back To Repository</a>
+</p>
+
+
+---
+**<a href="https://instacapture.mrsoni.me?ref=footer-github" target="_blank">InstaCapture</a>** - Provided by **<a href="https://soniprathmesh.soni?ref=footer-github" target="_blank">Prathmesh Soni</a>**

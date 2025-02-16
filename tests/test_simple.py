@@ -20,7 +20,7 @@ Usage:
 Author: Prathmesh Soni
 """
 
-from InstaCapture import InstaStory, InstaPost
+from instacapture import InstaStory, InstaPost
 
 
 def get_cookies():

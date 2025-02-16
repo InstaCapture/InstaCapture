@@ -126,6 +126,9 @@ class InstaPost:
         with open(f'{self.folder_path}/post/{self.username}/{self.reel_id}.json', 'w') as f:
             json.dump({self.username: media_data}, f)
         
+        with open(f'{self.folder_path}/post/{self.username}/{self.reel_id}-main.json', 'w') as f:
+            json.dump(self.items, f)
+        
         self.print(True)
         return {self.username: media_data}
     

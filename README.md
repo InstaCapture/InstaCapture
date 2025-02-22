@@ -108,4 +108,4 @@ This project is licensed under the [MIT License](https://github.com/prathmeshson
 
 
 ---
-**<a href="https://instacapture.mrsoni.me?ref=footer-github" target="_blank">InstaCapture</a>** - Provided by **<a href="https://soniprathmesh.soni?ref=footer-github" target="_blank">Prathmesh Soni</a>**
+**<a href="https://instacapture.mrsoni.me?ref=footer-github" target="_blank">InstaCapture</a>** - Provided by **<a href="https://soniprathmesh.com?ref=footer-github" target="_blank">Prathmesh Soni</a>**

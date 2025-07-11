@@ -14,6 +14,8 @@
 
 📌 **Project Page**: [InstaCapture on PyPI](https://pypi.org/project/instacapture/)
 
+📌 **Live Demo**: [InstaCapture](https://instacapture.stuffs.me/instacapture/)
+
 ## Features
 ✅ Download Instagram stories using user cookies.  
 ✅ Download reels, posts, IGTV videos, and profile pictures **without cookies**.  
